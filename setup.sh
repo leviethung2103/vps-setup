@@ -76,3 +76,11 @@ npm install -g yarn
 
 
 sudo apt-get install screen
+
+
+# Increase SWAP RAM
+sudo fallocate -l 1.5G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo swapon --show
